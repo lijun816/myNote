@@ -1,0 +1,10 @@
+DBCC DROPCLEANBUFFERS
+GO
+SET STATISTICS IO ON
+GO
+SELECT SalesOrderID,RevisionNumber, OrderDate, DueDate 
+FROM New_SalesOrderHeader
+ORDER BY SalesOrderID
+GO
+SET STATISTICS IO OFF
+GO

@@ -1,0 +1,7 @@
+netty 是单线程模型
+
+
+1:最外侧为netty的boss线程,负责监听select的accept事件
+2:接收到accept事件后,将chanel转发到worker线程
+3:每个worker线程单独包含一个select,用于监听selector的可读事件
+  每个worker单独处理本身注册的chanel 

@@ -1,0 +1,166 @@
+<?xml version="1.0"?>
+<SqlWorkbenchSqlProject xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" Name="DM Exercise">
+  <Items>
+    <LogicalFolder Name="Connections" Type="2" Sorted="true">
+      <Items>
+        <ConnectionNode Name="SQL2014DEMO:SQL2014DEMO\Administrator">
+          <Created>2013-12-21T12:45:49.9724766-06:00</Created>
+          <Type>SQL</Type>
+          <Server>SQL2014DEMO</Server>
+          <UserName />
+          <Authentication>Windows Authentication</Authentication>
+          <InitialDB />
+          <LoginTimeout>15</LoginTimeout>
+          <ExecutionTimeout>0</ExecutionTimeout>
+          <ConnectionProtocol>NotSpecified</ConnectionProtocol>
+          <ApplicationName />
+        </ConnectionNode>
+        <ConnectionNode Name="SQL2014DEMO\SQLSERVER01:SQL2014DEMO\Administrator">
+          <Created>2013-12-21T12:44:13.9260832-06:00</Created>
+          <Type>SQL</Type>
+          <Server>SQL2014DEMO\SQLSERVER01</Server>
+          <UserName />
+          <Authentication>Windows Authentication</Authentication>
+          <InitialDB />
+          <LoginTimeout>15</LoginTimeout>
+          <ExecutionTimeout>0</ExecutionTimeout>
+          <ConnectionProtocol>NotSpecified</ConnectionProtocol>
+          <ApplicationName>Microsoft SQL Server Management Studio - Query</ApplicationName>
+        </ConnectionNode>
+        <ConnectionNode Name="SQL2014DEMO\SQLSERVER02:SQL2014DEMO\Administrator">
+          <Created>2013-12-21T12:45:05.4886528-06:00</Created>
+          <Type>SQL</Type>
+          <Server>SQL2014DEMO\SQLSERVER02</Server>
+          <UserName />
+          <Authentication>Windows Authentication</Authentication>
+          <InitialDB />
+          <LoginTimeout>15</LoginTimeout>
+          <ExecutionTimeout>0</ExecutionTimeout>
+          <ConnectionProtocol>NotSpecified</ConnectionProtocol>
+          <ApplicationName />
+        </ConnectionNode>
+      </Items>
+    </LogicalFolder>
+    <LogicalFolder Name="Queries" Type="0" Sorted="true">
+      <Items>
+        <FileNode Name="10-BackupDatabase.sql">
+          <AssociatedConnectionMoniker>8c91a03d-f9b4-46c0-a305-b5dcc79ff907:SQL2014DEMO\SQLSERVER01:True</AssociatedConnectionMoniker>
+          <AssociatedConnSrvName>SQL2014DEMO\SQLSERVER01</AssociatedConnSrvName>
+          <AssociatedConnUserName />
+          <FullPath>10-BackupDatabase.sql</FullPath>
+        </FileNode>
+        <FileNode Name="13-BackupLogPrincipal.sql">
+          <AssociatedConnectionMoniker>8c91a03d-f9b4-46c0-a305-b5dcc79ff907:SQL2014DEMO\SQLSERVER01:True</AssociatedConnectionMoniker>
+          <AssociatedConnSrvName>SQL2014DEMO\SQLSERVER01</AssociatedConnSrvName>
+          <AssociatedConnUserName />
+          <FullPath>13-BackupLogPrincipal.sql</FullPath>
+        </FileNode>
+        <FileNode Name="3-CreateCertOnMirror.sql">
+          <AssociatedConnectionMoniker>8c91a03d-f9b4-46c0-a305-b5dcc79ff907:SQL2014DEMO\SQLSERVER02:True</AssociatedConnectionMoniker>
+          <AssociatedConnSrvName>SQL2014DEMO\SQLSERVER02</AssociatedConnSrvName>
+          <AssociatedConnUserName />
+          <FullPath>3-CreateCertOnMirror.sql</FullPath>
+        </FileNode>
+        <FileNode Name="1-CreateCertOnPrincipal.sql">
+          <AssociatedConnectionMoniker>8c91a03d-f9b4-46c0-a305-b5dcc79ff907:SQL2014DEMO\SQLSERVER01:True</AssociatedConnectionMoniker>
+          <AssociatedConnSrvName>SQL2014DEMO\SQLSERVER01</AssociatedConnSrvName>
+          <AssociatedConnUserName />
+          <FullPath>1-CreateCertOnPrincipal.sql</FullPath>
+        </FileNode>
+        <FileNode Name="5-CreateCertOnWitness.sql">
+          <AssociatedConnectionMoniker>8c91a03d-f9b4-46c0-a305-b5dcc79ff907:SQL2014DEMO:True</AssociatedConnectionMoniker>
+          <AssociatedConnSrvName>SQL2014DEMO</AssociatedConnSrvName>
+          <AssociatedConnUserName />
+          <FullPath>5-CreateCertOnWitness.sql</FullPath>
+        </FileNode>
+        <FileNode Name="4-CreateEndPointOnMirror.sql">
+          <AssociatedConnectionMoniker>8c91a03d-f9b4-46c0-a305-b5dcc79ff907:SQL2014DEMO\SQLSERVER02:True</AssociatedConnectionMoniker>
+          <AssociatedConnSrvName>SQL2014DEMO\SQLSERVER02</AssociatedConnSrvName>
+          <AssociatedConnUserName />
+          <FullPath>4-CreateEndPointOnMirror.sql</FullPath>
+        </FileNode>
+        <FileNode Name="2-CreateEndPointOnPrincipal.sql">
+          <AssociatedConnectionMoniker>8c91a03d-f9b4-46c0-a305-b5dcc79ff907:SQL2014DEMO\SQLSERVER01:True</AssociatedConnectionMoniker>
+          <AssociatedConnSrvName>SQL2014DEMO\SQLSERVER01</AssociatedConnSrvName>
+          <AssociatedConnUserName />
+          <FullPath>2-CreateEndPointOnPrincipal.sql</FullPath>
+        </FileNode>
+        <FileNode Name="6-CreateEndPointOnWitness.sql">
+          <AssociatedConnectionMoniker>8c91a03d-f9b4-46c0-a305-b5dcc79ff907:SQL2014DEMO:True</AssociatedConnectionMoniker>
+          <AssociatedConnSrvName>SQL2014DEMO</AssociatedConnSrvName>
+          <AssociatedConnUserName />
+          <FullPath>6-CreateEndPointOnWitness.sql</FullPath>
+        </FileNode>
+        <FileNode Name="DatabaseMirroringCommands.sql">
+          <AssociatedConnectionMoniker>8c91a03d-f9b4-46c0-a305-b5dcc79ff907:SQL2014DEMO\SQLSERVER01:True</AssociatedConnectionMoniker>
+          <AssociatedConnSrvName>SQL2014DEMO\SQLSERVER01</AssociatedConnSrvName>
+          <AssociatedConnUserName />
+          <FullPath>DatabaseMirroringCommands.sql</FullPath>
+        </FileNode>
+        <FileNode Name="12-ModifyData.sql">
+          <AssociatedConnectionMoniker>8c91a03d-f9b4-46c0-a305-b5dcc79ff907:SQL2014DEMO\SQLSERVER01:True</AssociatedConnectionMoniker>
+          <AssociatedConnSrvName>SQL2014DEMO\SQLSERVER01</AssociatedConnSrvName>
+          <AssociatedConnUserName />
+          <FullPath>12-ModifyData.sql</FullPath>
+        </FileNode>
+        <FileNode Name="8-Mirror_CreateLoginAndGrant.sql">
+          <AssociatedConnectionMoniker>8c91a03d-f9b4-46c0-a305-b5dcc79ff907:SQL2014DEMO\SQLSERVER02:True</AssociatedConnectionMoniker>
+          <AssociatedConnSrvName>SQL2014DEMO\SQLSERVER02</AssociatedConnSrvName>
+          <AssociatedConnUserName />
+          <FullPath>8-Mirror_CreateLoginAndGrant.sql</FullPath>
+        </FileNode>
+        <FileNode Name="MirroringCatalogView.sql">
+          <AssociatedConnectionMoniker>8c91a03d-f9b4-46c0-a305-b5dcc79ff907:SQL2014DEMO\SQLSERVER01:True</AssociatedConnectionMoniker>
+          <AssociatedConnSrvName>SQL2014DEMO\SQLSERVER01</AssociatedConnSrvName>
+          <AssociatedConnUserName />
+          <FullPath>MirroringCatalogView.sql</FullPath>
+        </FileNode>
+        <FileNode Name="7-Principal_CreateLoginAndGrant.sql">
+          <AssociatedConnectionMoniker>8c91a03d-f9b4-46c0-a305-b5dcc79ff907:SQL2014DEMO\SQLSERVER01:True</AssociatedConnectionMoniker>
+          <AssociatedConnSrvName>SQL2014DEMO\SQLSERVER01</AssociatedConnSrvName>
+          <AssociatedConnUserName />
+          <FullPath>7-Principal_CreateLoginAndGrant.sql</FullPath>
+        </FileNode>
+        <FileNode Name="11-RestoreDatabase.sql">
+          <AssociatedConnectionMoniker>8c91a03d-f9b4-46c0-a305-b5dcc79ff907:SQL2014DEMO\SQLSERVER02:True</AssociatedConnectionMoniker>
+          <AssociatedConnSrvName>SQL2014DEMO\SQLSERVER02</AssociatedConnSrvName>
+          <AssociatedConnUserName />
+          <FullPath>11-RestoreDatabase.sql</FullPath>
+        </FileNode>
+        <FileNode Name="16-RestoreLogOnMirror.sql">
+          <AssociatedConnectionMoniker>8c91a03d-f9b4-46c0-a305-b5dcc79ff907:SQL2014DEMO\SQLSERVER02:True</AssociatedConnectionMoniker>
+          <AssociatedConnSrvName>SQL2014DEMO\SQLSERVER02</AssociatedConnSrvName>
+          <AssociatedConnUserName />
+          <FullPath>16-RestoreLogOnMirror.sql</FullPath>
+        </FileNode>
+        <FileNode Name="14-SetupMirrorServer.sql">
+          <AssociatedConnectionMoniker>8c91a03d-f9b4-46c0-a305-b5dcc79ff907:SQL2014DEMO\SQLSERVER02:True</AssociatedConnectionMoniker>
+          <AssociatedConnSrvName>SQL2014DEMO\SQLSERVER02</AssociatedConnSrvName>
+          <AssociatedConnUserName />
+          <FullPath>14-SetupMirrorServer.sql</FullPath>
+        </FileNode>
+        <FileNode Name="15-SetupPrincipalServer.sql">
+          <AssociatedConnectionMoniker>8c91a03d-f9b4-46c0-a305-b5dcc79ff907:SQL2014DEMO\SQLSERVER01:True</AssociatedConnectionMoniker>
+          <AssociatedConnSrvName>SQL2014DEMO\SQLSERVER01</AssociatedConnSrvName>
+          <AssociatedConnUserName />
+          <FullPath>15-SetupPrincipalServer.sql</FullPath>
+        </FileNode>
+        <FileNode Name="17-SetupWitnessServer.sql">
+          <AssociatedConnectionMoniker>8c91a03d-f9b4-46c0-a305-b5dcc79ff907:SQL2014DEMO\SQLSERVER01:True</AssociatedConnectionMoniker>
+          <AssociatedConnSrvName>SQL2014DEMO\SQLSERVER01</AssociatedConnSrvName>
+          <AssociatedConnUserName />
+          <FullPath>17-SetupWitnessServer.sql</FullPath>
+        </FileNode>
+        <FileNode Name="9-Witness_CreateLoginAndGrant.sql">
+          <AssociatedConnectionMoniker>8c91a03d-f9b4-46c0-a305-b5dcc79ff907:SQL2014DEMO:True</AssociatedConnectionMoniker>
+          <AssociatedConnSrvName>SQL2014DEMO</AssociatedConnSrvName>
+          <AssociatedConnUserName />
+          <FullPath>9-Witness_CreateLoginAndGrant.sql</FullPath>
+        </FileNode>
+      </Items>
+    </LogicalFolder>
+    <LogicalFolder Name="Miscellaneous" Type="3" Sorted="true">
+      <Items />
+    </LogicalFolder>
+  </Items>
+</SqlWorkbenchSqlProject>

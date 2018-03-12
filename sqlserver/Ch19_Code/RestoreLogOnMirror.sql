@@ -1,0 +1,5 @@
+USE MASTER
+GO
+RESTORE LOG AdventureWorks 
+FROM DISK = 'C:\AdventureWorks.trn'
+WITH NORECOVERY

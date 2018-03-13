@@ -1,0 +1,13 @@
+mysql的配置文件
+
+
+1:
+    clob类型和blob文件如何对应数据库  
+    输入值为inputstream
+    输出 Clob对象 Blob对象
+
+2: 
+    CallableStatment调用数据存储过程,可以得到存储过程的返回值
+
+3:  ResultSet和Connection 都可以 getMetaData 一个是结果集的元数据,一个是数据的元数据
+

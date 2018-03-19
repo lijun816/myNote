@@ -11,8 +11,10 @@ public class MyTask {
 
     private static Logger log = LoggerFactory.getLogger(MyTask.class);
 
-    //毫秒
-    @Scheduled(fixedRate = 1000,initialDelay = 1)
+    /**
+     * 单位毫秒
+     */
+    @Scheduled(fixedRate = 1000*60*60,initialDelay = 1)
     public void task() {
         log.info("MyTask,task:{}", "循环任务测试");
     }

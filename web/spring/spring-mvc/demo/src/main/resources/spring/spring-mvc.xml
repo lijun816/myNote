@@ -22,7 +22,7 @@
     <mvc:annotation-driven/>
 
 
-    <!-- 声明spring对@AspectJ的支持 -->
+    <!-- 声明spring对@AspectJ的支持对controller的aop支持 -->
     <aop:aspectj-autoproxy expose-proxy="true"/>
 
     <mvc:default-servlet-handler/>

@@ -9,7 +9,7 @@
         <context:exclude-filter type="annotation" expression="org.springframework.stereotype.Controller"/>
     </context:component-scan>
 
-    <!-- 声明spring对@AspectJ的支持 -->
+    <!-- 声明spring对@AspectJ的支持对非controller的aop支持,因为此次扫描排除了Controller -->
     <aop:aspectj-autoproxy expose-proxy="true"/>
 
 </beans>

@@ -1,0 +1,1 @@
+1:spring aop 要引入织入包,另外aop类上除了线程aop注解还需要@Component

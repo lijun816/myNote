@@ -9,12 +9,10 @@ import org.springframework.stereotype.Component;
 @Aspect
 @Component
 public class TimeStatitics {
-
-
     /**
      * 必须为final String类型的,注解里要使用的变量只能是静态常量类型的
      */
-    private static final String EDP="execution(* com.lijun.spring.web.service.HelloService.*(..))";
+    private static final String EDP="execution(* com.lijun.spring.web.controller.HelloController.*(..))";
 
     /**
      * 切面的前置方法 即方法执行前拦截到的方法

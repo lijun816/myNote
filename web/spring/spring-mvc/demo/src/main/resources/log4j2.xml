@@ -7,7 +7,7 @@
         <Property name="genericPatternProd">%d{yyyy-MM-dd HH:mm:ss.SSS} [%t] %-5level %logger{.1} - %msg%n</Property>
 
         <!-- 包名称输出1位-->
-        <Property name="genericPatternDev">%d{HH:mm:ss.SSS} %-5level [%t] %logger{.1} %n%n %msg%n%n%n</Property>
+        <Property name="genericPatternDev">%d{HH:mm:ss.SSS} %-5level [%t] %logger{1.} %n%n %msg%n%n%n</Property>
 
     </Properties>
     <!-- appender们的定义 -->

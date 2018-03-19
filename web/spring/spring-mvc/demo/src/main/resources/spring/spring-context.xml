@@ -14,7 +14,11 @@
     <!-- 开启使用spring事务注解 -->
     <tx:annotation-driven/>
     <!-- 定时器开关-->
-    <task:annotation-driven />
+    <task:annotation-driven/>
+
+    <!-- 引入外部的资源文件 -->
+    <context:property-placeholder location="classpath:mail.properties,classpath:redis.properties,classpath*:db.properties"/>
+
     <!-- redis配置 -->
     <import resource="spring-redis.xml"/>
     <!-- 数据库配置 -->

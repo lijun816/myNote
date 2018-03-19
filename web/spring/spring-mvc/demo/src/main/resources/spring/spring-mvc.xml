@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:tx="http://www.springframework.org/schema/tx"
+       xmlns:context="http://www.springframework.org/schema/context"
+       xmlns:mvc="http://www.springframework.org/schema/mvc" xmlns:p="http://www.springframework.org/schema/p"
+       xmlns:aop="http://www.springframework.org/schema/aop"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+    http://www.springframework.org/schema/beans/spring-beans.xsd
+    http://www.springframework.org/schema/tx
+    http://www.springframework.org/schema/tx/spring-tx.xsd
+    http://www.springframework.org/schema/context
+    http://www.springframework.org/schema/context/spring-context.xsd
+    http://www.springframework.org/schema/mvc
+    http://www.springframework.org/schema/mvc/spring-mvc.xsd http://www.springframework.org/schema/aop http://www.springframework.org/schema/aop/spring-aop.xsd">
+
+    <!--只扫描controller ,用于多个dispatchServlet时不同的上下文,
+        如果只有一个,则可以使用application上下文扫描包-->
+    <context:component-scan base-package="com.lijun.spring.web.controller"  />
+
+    <!--必须写下边的开启注解扫描,上边只是扫描到包,但是没有自动开启注解-->
+    <mvc:annotation-driven/>
+
+
+    <!-- 声明spring对@AspectJ的支持 -->
+    <aop:aspectj-autoproxy expose-proxy="true"/>
+
+    <mvc:default-servlet-handler/>
+    <!-- 对模型视图名称的解析，即在模型视图名称添加前后缀 -->
+    <!-- 视图解释类 -->
+    <bean class="org.springframework.web.servlet.view.InternalResourceViewResolver">
+        <property name="prefix" value="/WEB-INF/jsp/"/>
+        <property name="suffix" value=".jsp"/>
+        <property name="viewClass" value="org.springframework.web.servlet.view.JstlView"/>
+    </bean>
+    <bean id="multipartResolver" class="org.springframework.web.multipart.commons.CommonsMultipartResolver">
+        <property name="defaultEncoding" value="UTF-8"/>
+        <property name="maxUploadSize" value="32505856"/><!--byte-->
+        <property name="maxInMemorySize" value="4096"/>
+    </bean>
+</beans>

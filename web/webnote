@@ -1,0 +1,4 @@
+1:浏览器的某些插件会影响到js的正常寻找dom
+   自己已知的bug就是QQ浏览器的一个截图生成二维码的插件,会影响jquery.form.js的ajaxsubmit提交表单,导致无法返回
+   jquery.form.js的ajaxsubmit 通过iframe的方式提交表单后,通过html标签选择到返回结果,然后调用success回调函数,
+   但是由于截图插件,导致无法正常选取dom,导致无返回结果

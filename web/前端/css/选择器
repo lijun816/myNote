@@ -1,0 +1,47 @@
+css选择器
+
+
+~   相同父元素  p>a 相同父元素p后边的所有a元素
+
+>   直接子元素  p>a 所有父元素为p的所有a元素
+
++   相同父元素  li+p 所有前一个元素为li的p元素(相邻)
+
+
+    (条件属性)
+:first-child 选择是父元素的第一个元素的[class|element|id] (必须是父元素第一个元素)
+
+:last-child 选择是父元素的最后一个元素的[class|element|id] (必须是父元素第一个元素)
+
+:only-child 父元素只有一个此元素才行(不可以有其他元素)
+
+:nth-child(n) 必须是父元素的第几个元素
+
+:nth-last-child(n) 倒数必须是父元素的第几个元素
+
+    (非条件属性)
+:first-of-type	选择属于其父元素的首个 <p> 元素的每个 <p> 元素。   (父元素中的第一个p子元素) 从所有子元素中找
+
+:last-of-type	选择属于其父元素的最后 <p> 元素的每个 <p> 元素。 
+
+:only-of-type	父元素中唯一一个的p子元素(可以有其他元素)
+
+:nth-of-type(n)	 该类型的第几个
+
+:nth-last-of-type(n) 倒数该类型的第几个
+
+
+
+
+
+交集选择器 标签+类或者id
+    p#id1  选中id为id1的p元素
+    p.class1 选中class为class1的p元素
+
+
+CSS3:
+
+a[src^="https"]	选择其 src 属性值以 "https" 开头的每个 <a> 元素。	 
+a[src$=".pdf"]	选择其 src 属性以 ".pdf" 结尾的所有 <a> 元素。	 
+a[src*="abc"]	选择其 src 属性中包含 "abc" 子串的每个 <a> 元素。	 
+
